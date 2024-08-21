@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 
 const Home = () => {
 
-    const { data: blogs, isPending, error } = useFetch('http://localhost:7000/blogs');
+    const { data: blogs, isPending, error } = useFetch('https://blog-data-wohe.onrender.com/blogs/');
     // ♡⸜(˶˃ ᵕ ˂˶)⸝♡
 
 

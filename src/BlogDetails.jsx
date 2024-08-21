@@ -7,8 +7,8 @@ import useDeleteBlog from './DeleteBlog';
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:7000/blogs/' + id);
-
+    const { data: blog, error, isPending } = useFetch('https://blog-data-wohe.onrender.com/blogs/' + id);
+    
     const deleteBlog = useDeleteBlog();
     const DeleteBlog = () => {
         deleteBlog(id);

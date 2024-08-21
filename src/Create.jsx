@@ -21,7 +21,7 @@ const Create = () => {
             author: author
         }
 
-        fetch(`http://localhost:7000/blogs`, {
+        fetch(`https://blog-data-wohe.onrender.com/blogs/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

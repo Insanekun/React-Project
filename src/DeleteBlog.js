@@ -7,7 +7,7 @@ const useDeleteBlog = (id) => {
     // const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
     const navigate = useNavigate();
     const DeleteBlog = (id) => {
-        fetch('http://localhost:7000/blogs/' + id, {
+        fetch('https://blog-data-wohe.onrender.com/blogs/' + id, {
             method: 'DELETE'
         }).then(() => {
             console.log('Blog deleted');
